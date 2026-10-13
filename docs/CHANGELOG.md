@@ -1,6 +1,13 @@
 # Changelog: Flairtek Review AI
 
 ## [Unreleased]
+### Phase 6 - Review Request Automation
+- Implemented review campaigns and requests schema with tenant isolation RLS.
+- Added messaging service abstraction for WhatsApp and Email review invitation dispatching.
+- Implemented print-ready QR code generation and direct review shortlinks for locations.
+- Created public click-tracking redirect route (`/r/[code]`) forwarding to Google review pages.
+- Built interactive Review Request Automation dashboard page (`/dashboard/review-requests`).
+
 ### Phase 5 - Review Inbox, Alerts & Analytics
 - Implemented unified, filterable Review Inbox with live status updates.
 - Added Analytics aggregation service (rating trends, response rates, distribution, sentiment).

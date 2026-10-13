@@ -10,8 +10,8 @@ The project follows a phased development methodology.
 | **3** | Google Business Profile Integration | **Completed** |
 | **4** | AI-powered Reply Engine | **Completed** |
 | **5** | Review Inbox, Alerts & Analytics | **Completed** |
-| **6** | Review Request Automation | In Progress |
-| **7** | Razorpay Subscription & Payments | Not Started |
+| **6** | Review Request Automation | **Completed** |
+| **7** | Razorpay Subscription & Payments | In Progress |
 | **8** | SEO, GEO & AEO | Not Started |
 | **9** | Administrative Console | Not Started |
 | **10** | QA, Security & Performance | Not Started |
