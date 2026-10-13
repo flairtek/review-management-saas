@@ -1,6 +1,12 @@
 # Changelog: Flairtek Review AI
 
 ## [Unreleased]
+### Phase 5 - Review Inbox, Alerts & Analytics
+- Implemented unified, filterable Review Inbox with live status updates.
+- Added Analytics aggregation service (rating trends, response rates, distribution, sentiment).
+- Built notification/alerts framework for negative/flagged reviews and sync errors.
+- Integrated live analytics and inbox previews into Dashboard Overview.
+
 ### Phase 4 - AI Review Reply Engine
 - Added provider-agnostic AI layer supporting multiple models with fallbacks and Mock adapter.
 - Implemented prompt hardening and injection defense with XML encapsulation.
