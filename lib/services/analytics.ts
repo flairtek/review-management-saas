@@ -1,5 +1,3 @@
-import { createClient } from "@/lib/supabase/server";
-
 export interface AnalyticsSummary {
   totalReviews: number;
   averageRating: number;
@@ -58,19 +56,4 @@ export function computeAnalyticsFromReviews(reviews: Array<{ rating: number; sen
     sentimentBreakdown,
     ratingDistribution,
   };
-}
-
-export async function getOrganizationAnalytics(organizationId: string): Promise<AnalyticsSummary> {
-  const supabase = await createClient();
-
-  const { data: reviews, error } = await supabase
-    .from("reviews")
-    .select("rating, sentiment, status, review_date")
-    .eq("organization_id", organizationId);
-
-  if (error || !reviews) {
-    return computeAnalyticsFromReviews([]);
-  }
-
-  return computeAnalyticsFromReviews(reviews);
 }

@@ -25,7 +25,7 @@ import {
 
 const navigationItems = [
   { name: "Overview", href: "/dashboard", icon: LayoutDashboard },
-  { name: "Reviews Inbox", href: "/dashboard/inbox", icon: Inbox, badge: "12" },
+  { name: "Reviews Inbox", href: "/dashboard/reviews", icon: Inbox, badge: "12" },
   { name: "AI Reply Assistant", href: "/dashboard/ai-assistant", icon: Sparkles },
   { name: "Approval Queue", href: "/dashboard/approval-queue", icon: CheckCircle2, badge: "3" },
   { name: "Locations", href: "/dashboard/locations", icon: MapPin },
