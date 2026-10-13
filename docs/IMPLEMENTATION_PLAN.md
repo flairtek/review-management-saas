@@ -4,12 +4,12 @@ The project follows a phased development methodology.
 
 | Phase | Description | Status |
 | :--- | :--- | :--- |
-| **0** | Repository Discovery, Doc scaffolding, Planning | **In Progress** |
-| **1** | Product Design System & UX | Not Started |
-| **2** | DB, Auth & Tenant Security | Not Started |
-| **3** | Google Business Profile Integration | Not Started |
-| **4** | AI-powered Reply Engine | Not Started |
-| **5** | Review Inbox, Alerts & Analytics | Not Started |
+| **0** | Repository Discovery, Doc scaffolding, Planning | **Completed** |
+| **1** | Product Design System & UX | **Completed** |
+| **2** | DB, Auth & Tenant Security | **Completed** |
+| **3** | Google Business Profile Integration | **Completed** |
+| **4** | AI-powered Reply Engine | **Completed** |
+| **5** | Review Inbox, Alerts & Analytics | In Progress |
 | **6** | Review Request Automation | Not Started |
 | **7** | Razorpay Subscription & Payments | Not Started |
 | **8** | SEO, GEO & AEO | Not Started |
