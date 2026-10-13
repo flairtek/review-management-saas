@@ -1,6 +1,14 @@
 # Changelog: Flairtek Review AI
 
 ## [Unreleased]
+### Phase 7 - Razorpay Subscriptions & Payments
+- Configured plan limits, tiers, and pricing definitions (`Starter`, `Growth`, `Agency`).
+- Implemented Razorpay SDK service wrapper with hosted checkout redirect and mock provider.
+- Added cryptographic HMAC signature verification for Razorpay webhooks.
+- Created Razorpay webhook listener (`/api/webhooks/razorpay`) to synchronize subscription statuses (`active`, `past_due`, `canceled`).
+- Implemented `/api/billing/checkout` endpoint to initiate recurring subscription checkouts.
+- Built subscription & billing management dashboard (`/dashboard/billing`) with plan cards and status indicators.
+
 ### Phase 6 - Review Request Automation
 - Implemented review campaigns and requests schema with tenant isolation RLS.
 - Added messaging service abstraction for WhatsApp and Email review invitation dispatching.
