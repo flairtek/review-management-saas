@@ -1,6 +1,14 @@
 # Changelog: Flairtek Review AI
 
 ## [Unreleased]
+### Phase 8 - SEO, GEO & AEO
+- Implemented dynamic Next.js `sitemap.ts` routing for all marketing and authentication pages.
+- Configured dynamic crawler rules in `robots.ts` with disallow paths for sensitive dashboard routes.
+- Added structured JSON-LD schemas for `SoftwareApplication` and `Organization` to boost rich snippets.
+- Integrated Open Graph (`og:*`) and Twitter Cards metadata with canonical base URL in `app/layout.tsx`.
+- Formatted crawlable, structured factual data for Generative Engine Optimization (GEO) and Answer Engine Optimization (AEO).
+- Added unit tests for sitemap and robots metadata rules.
+
 ### Phase 7 - Razorpay Subscriptions & Payments
 - Configured plan limits, tiers, and pricing definitions (`Starter`, `Growth`, `Agency`).
 - Implemented Razorpay SDK service wrapper with hosted checkout redirect and mock provider.
