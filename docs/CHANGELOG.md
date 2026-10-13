@@ -1,6 +1,11 @@
 # Changelog: Flairtek Review AI
 
 ## [Unreleased]
+### Phase 10 - QA, Security & Performance
+- Implemented robust security headers in `next.config.ts`, including CSP, HSTS, and X-Frame-Options.
+- Created `tests/security/security.test.ts` for AI prompt injection defense validation and webhook HMAC spoofing resistance checks.
+- Conducted full suite test execution and verified 100% test pass rate across unit, integration, and security tests.
+
 ### Phase 9 - Administrative Console
 - Added superadmin role flag (`is_superadmin`) to `profiles` table.
 - Implemented `verifySuperadmin` server-side authorization guard with cookie-safe error handling.
