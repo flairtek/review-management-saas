@@ -1,6 +1,15 @@
 # Changelog: Flairtek Review AI
 
 ## [Unreleased]
+### Phase 9 - Administrative Console
+- Added superadmin role flag (`is_superadmin`) to `profiles` table.
+- Implemented `verifySuperadmin` server-side authorization guard with cookie-safe error handling.
+- Configured superadmin bypass RLS policies for global data access.
+- Built Admin Dashboard overview with platform-wide health/usage metrics.
+- Created tenant inspection portal for organization and subscription management.
+- Implemented global audit log viewer for security traceability.
+- Added administrative link to dashboard sidebar (visible conditionally).
+
 ### Phase 8 - SEO, GEO & AEO
 - Implemented dynamic Next.js `sitemap.ts` routing for all marketing and authentication pages.
 - Configured dynamic crawler rules in `robots.ts` with disallow paths for sensitive dashboard routes.

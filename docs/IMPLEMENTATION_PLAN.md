@@ -13,8 +13,8 @@ The project follows a phased development methodology.
 | **6** | Review Request Automation | **Completed** |
 | **7** | Razorpay Subscription & Payments | **Completed** |
 | **8** | SEO, GEO & AEO | **Completed** |
-| **9** | Administrative Console | In Progress |
-| **10** | QA, Security & Performance | Not Started |
+| **9** | Administrative Console | **Completed** |
+| **10** | QA, Security & Performance | In Progress |
 | **11** | Deployment & Launch | Not Started |
 
 *Development proceeds one phase at a time. Each phase requires verification before moving to the next.*

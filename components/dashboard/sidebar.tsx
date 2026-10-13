@@ -21,6 +21,7 @@ import {
   Settings,
   HelpCircle,
   ExternalLink,
+  ShieldAlert,
 } from "lucide-react";
 
 const navigationItems = [
@@ -39,6 +40,7 @@ const navigationItems = [
   { name: "Subscription & Billing", href: "/dashboard/billing", icon: CreditCard },
   { name: "Account Settings", href: "/dashboard/settings", icon: Settings },
   { name: "Help & Support", href: "/dashboard/help", icon: HelpCircle },
+  { name: "Admin Console", href: "/dashboard/admin", icon: ShieldAlert, adminOnly: true },
 ];
 
 export function DashboardSidebar() {
@@ -71,6 +73,8 @@ export function DashboardSidebar() {
         {navigationItems.map((item) => {
           const isActive = pathname === item.href;
           const Icon = item.icon;
+          // Admin-only items render with amber styling
+          const isAdminItem = (item as any).adminOnly === true;
           return (
             <Link
               key={item.name}
@@ -78,7 +82,11 @@ export function DashboardSidebar() {
               className={cn(
                 "flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium transition-colors",
                 isActive
-                  ? "bg-blue-50 text-blue-700 font-semibold"
+                  ? isAdminItem
+                    ? "bg-amber-50 text-amber-800 font-semibold"
+                    : "bg-blue-50 text-blue-700 font-semibold"
+                  : isAdminItem
+                  ? "text-amber-700 hover:bg-amber-50 hover:text-amber-900"
                   : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
               )}
             >
@@ -86,7 +94,9 @@ export function DashboardSidebar() {
                 <Icon
                   className={cn(
                     "h-4 w-4",
-                    isActive ? "text-blue-600" : "text-slate-400 group-hover:text-slate-500"
+                    isActive
+                      ? isAdminItem ? "text-amber-700" : "text-blue-600"
+                      : isAdminItem ? "text-amber-500" : "text-slate-400 group-hover:text-slate-500"
                   )}
                 />
                 <span>{item.name}</span>
